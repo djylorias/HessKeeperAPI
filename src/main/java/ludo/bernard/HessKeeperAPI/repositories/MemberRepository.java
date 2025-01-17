@@ -1,10 +1,11 @@
 package ludo.bernard.HessKeeperAPI.repositories;
 
-import java.lang.reflect.Member;
+
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Component;
 
+import ludo.bernard.HessKeeperAPI.dto.user.Member;
 import ludo.bernard.HessKeeperAPI.dto.user.MemberId;
 
 @Component
