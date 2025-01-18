@@ -17,12 +17,12 @@ public class UserRestControler {
     @Autowired
     private UserRepository repository;
 
-    @GetMapping("/members")
+    @GetMapping("/users")
     public List<User> selectAll(){
         return (ArrayList<User>) repository.findAll();
     }
 
-    @PostMapping("/members/createMember")
+    @PostMapping("/users/createUser")
     public User creatreMember(User m){
         return repository.save(m);
     }
