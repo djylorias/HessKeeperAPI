@@ -1,4 +1,4 @@
-package ludo.bernard.HessKeeperAPI.dto.user;
+package ludo.bernard.HessKeeperAPI.dto;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
