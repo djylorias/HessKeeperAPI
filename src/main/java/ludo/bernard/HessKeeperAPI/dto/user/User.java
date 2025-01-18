@@ -1,15 +1,17 @@
 package ludo.bernard.HessKeeperAPI.dto.user;
 
-import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import lombok.Data;
 
 @Data
 @Entity
-public class Member {
+@Table(name="users")
+public class User {
     
-    @EmbeddedId
-    private MemberId memberId;
+    @Id
+    private String email;
     private String password;
     private String firstname;
     private String lastname;
