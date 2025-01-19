@@ -4,8 +4,8 @@ INSERT INTO users(email, password, firstname, lastname) VALUES('michel.bernard@g
 INSERT INTO users(email, password, firstname, lastname) VALUES('lucette.bernard@gmail.com', 'lulu', 'Lucette', 'Bernard');
 INSERT INTO users(email, password, firstname, lastname) VALUES('melanie.bernard@gmail.com', 'english', 'Mélanie', 'Bernard');
 
--- import defaults alteration types
-INSERT INTO alteration_type VALUES('annual', 'ANNUAL');
-INSERT INTO alteration_type VALUES('monthly', 'MONTHLY');
-INSERT INTO alteration_type VALUES('weekly', 'WEEKLY');
-INSERT INTO alteration_type VALUES('daily', 'DAILY');
+-- import defaults alteration regularity
+INSERT INTO alteration_regularity VALUES('annual', 'ANNUAL');
+INSERT INTO alteration_regularity VALUES('monthly', 'MONTHLY');
+INSERT INTO alteration_regularity VALUES('weekly', 'WEEKLY');
+INSERT INTO alteration_regularity VALUES('daily', 'DAILY');
