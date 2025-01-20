@@ -2,6 +2,8 @@ package ludo.bernard.HessKeeperAPI.dto.alteration;
 
 import java.time.LocalDate;
 
+import org.hibernate.annotations.ColumnDefault;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -44,5 +46,8 @@ class Alteration {
 
     @Column(columnDefinition = "TEXT")
     private String description;
+
+    @ColumnDefault("false")
+    private boolean outdated = false;
 
 }
