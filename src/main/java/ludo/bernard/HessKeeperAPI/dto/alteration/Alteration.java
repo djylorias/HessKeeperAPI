@@ -11,6 +11,7 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
+import ludo.bernard.HessKeeperAPI.dto.User;
 
 @Entity
 @Data
@@ -19,6 +20,10 @@ class Alteration {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private int ano;
+
+    @ManyToOne
+    @JoinColumn(name = "email")
+    private User user;
 
     private String title;
 
