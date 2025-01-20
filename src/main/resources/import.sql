@@ -9,3 +9,9 @@ INSERT INTO alteration_regularity VALUES('annual', 'ANNUAL');
 INSERT INTO alteration_regularity VALUES('monthly', 'MONTHLY');
 INSERT INTO alteration_regularity VALUES('weekly', 'WEEKLY');
 INSERT INTO alteration_regularity VALUES('daily', 'DAILY');
+
+-- import defaults alteration types
+INSERT INTO alteration_type VALUES('loan', 'LOAN');
+INSERT INTO alteration_type VALUES('subscription', 'SUBSCRIPTION');
+INSERT INTO alteration_type VALUES('insurance', 'INSURANCE');
+INSERT INTO alteration_type VALUES('rent', 'RENT');
